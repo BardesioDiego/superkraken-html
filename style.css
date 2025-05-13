@@ -206,6 +206,15 @@ h1,h2,h3,h4,h5,h6 {
   left: 3.5em;
 }
 
+.titulo_home{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
 @keyframes animation {
   0%,
   80%,
