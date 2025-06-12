@@ -183,6 +183,44 @@ h3, p, a {
   color: #234b80;
 }
 
+/** wpp link **/
+.float {
+  position: fixed;
+  width: 45px;       /* más pequeño que antes */
+  height: 45px;
+  background-color: #25d366;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 2px 2px 3px #999;
+  z-index: 999;
+}
+
+.boton-wpp {
+  font-size: 24px;   /* tamaño del ícono proporcional al botón */
+}
+
+.badge-message {
+  position: absolute;
+  top: 20px;   /* ajusta para que quede justo arriba */
+  right: 37px; /* ajusta para que quede en la esquina */
+  background-color: #ff0000; /* rojo o el color que quieras */
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 12px;
+  white-space: nowrap; /* para que no se corte el texto */
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
 /*----------------------------------------------*/
 /* 6. SITE STRUCTURE */
 /*----------------------------------------------*/
