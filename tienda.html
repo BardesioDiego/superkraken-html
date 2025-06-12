@@ -47,66 +47,68 @@
 <body>
 
   <header>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom">
     <div class="container-fluid">
-      <div class="d-flex justify-content-between align-items-center py-3 border-bottom">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/superkraken_logo_menu.png" alt="logo" class="img-fluid" style="max-height: 50px;">
+      </a>
 
-        <!-- Logo a la izquierda -->
-        <div>
-          <a href="index.html">
-            <img src="images/superkraken_logo_menu.png" alt="logo" class="img-fluid">
-          </a>
-        </div>
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Menú + Redes sociales a la derecha -->
-        <div class="d-flex align-items-center gap-4">
+      <!-- Contenido colapsable -->
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" aria-current="page" href="tienda.html">Tienda</a>
+          </li>
+        </ul>
 
-          <!-- Menú más hacia la derecha -->
-          <ul class="navbar-nav list-unstyled d-flex flex-row gap-4 mb-0 fw-bold text-dark">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a href="tienda.html" class="nav-link active" aria-current="page">Tienda</a>
-            </li>
-          </ul>
-
-          <!-- Redes sociales a la derecha -->
-          <div class="social-links">
-            <ul class="d-flex list-unstyled gap-2 mb-0">
-              <li>
-                <a href="#" class="btn btn-outline-dark d-flex align-items-center justify-content-center">
-                  <i class="bi bi-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="btn btn-outline-dark d-flex align-items-center justify-content-center">
-                  <i class="bi bi-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
+        <!-- Redes sociales -->
+        <ul class="d-flex list-unstyled gap-2 ms-lg-4 mb-0">
+          <li>
+            <a href="https://www.facebook.com/superkrakenregresa/"
+              class="btn btn-outline-dark d-flex align-items-center justify-content-center" target="_blank"
+              rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/superkraken2021/"
+              class="btn btn-outline-dark d-flex align-items-center justify-content-center" target="_blank"
+              rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-  </header>
+  </nav>
+</header>
 
 
 
-  <section
-    style="background-image: url('images/nueva_tienda_skraken.png');background-repeat: no-repeat;background-size: cover; background-position: center; min-height: 60vh; display: flex; align-items: flex-end;">
-    <div class="container-lg">
-      <div class="row">
-        <div class="col-lg-6" style="position: relative; top: -100px;" data-aos="zoom-in">
-          <h2 class="titulo_home">Viví el deporte con estilo <span class="neon">10% OFF</span> comprando online</h2>
-          <p class="fs-4" style="color: white;">Combiná camisetas deportivas y accesorios únicos. Equipate desde casa
-            con envíos a todo Uruguay.</p>
-        </div>
+
+  <section class="seccion-tienda d-flex align-items-end">
+  <div class="container-lg">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-white text-lg-start text-center mb-5" data-aos="zoom-in">
+        <h2 class="titulo_home">Viví el deporte con estilo <span class="neon">10% OFF</span> comprando online</h2>
+        <p class="fs-4">
+          Combiná camisetas deportivas y accesorios únicos. Equipate desde casa con envíos a todo Uruguay.
+        </p>
       </div>
     </div>
+  </div>
+</section>
 
-    </div>
-  </section>
 
   <section class="pb-5 pt-5" id="deportivos">
     <div class="container-lg">
@@ -114,8 +116,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-header d-flex flex-column my-4">
-            <h2 class="section-title text-primary-kraken" data-aos="fade-right" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">Deportivos - Consultar stock de talles</h2>
+            <h2 class="section-title text-primary-kraken">DEPORTIVOS - CONSULTAR STOCK</h2>
             <p>Niños: 4, 6, 8, 10, 12, 14 y 16 / Adultos: S, M, L, XL y XXL</p>
           </div>
         </div>
@@ -131,10 +132,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
-                    <img src="images/Tienda/ropa_deportiva_uruguay_SUPERKRAKEN.png" alt="Product Thumbnail"
-                      class="tab-image">
-                  </a>
+                  <img src="images/Tienda/ropa_deportiva_uruguay_SUPERKRAKEN.png" alt="Product Thumbnail"
+                    class="tab-image">
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canguro Uruguay - Niños</h3>
@@ -156,8 +155,6 @@
                       </div>
                     </div>
                   </div>
-
-
                 </div>
               </div>
             </div>
@@ -166,10 +163,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
-                    <img src="images/Tienda/ropa_deportiva_uruguay_SUPERKRAKEN (2).png" alt="Product Thumbnail"
-                      class="tab-image">
-                  </a>
+                  <img src="images/Tienda/ropa_deportiva_uruguay_SUPERKRAKEN (2).png" alt="Product Thumbnail"
+                    class="tab-image">
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canguro Uruguay - Adulto</h3>
@@ -197,11 +192,9 @@
 
             <div class="col">
               <div class="product-item">
-                <figure>
-                  <a href="index.html" title="Product Title">
+                <figure>          
                     <img src="images/Tienda/ropa_deportiva_nacional_SUPERKRAKEN.png" alt="Product Thumbnail"
-                      class="tab-image">
-                  </a>
+                      class="tab-image">             
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canguro Nacional 1 Niños y Adultos</h3>
@@ -229,11 +222,9 @@
 
             <div class="col">
               <div class="product-item">
-                <figure>
-                  <a href="index.html" title="Product Title">
+                <figure>                
                     <img src="images/Tienda/ropa_deportiva_nacional_SUPERKRAKEN (2).png" alt="Product Thumbnail"
-                      class="tab-image">
-                  </a>
+                      class="tab-image">                 
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canguro Nacional 2 Niños y Adultos</h3>
@@ -261,11 +252,9 @@
 
             <div class="col">
               <div class="product-item">
-                <figure>
-                  <a href="index.html" title="Product Title">
+                <figure>                 
                     <img src="images/Tienda/ropa_deportiva_nacional_SUPERKRAKEN (3).png" alt="Product Thumbnail"
-                      class="tab-image">
-                  </a>
+                      class="tab-image">               
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Pantalón Nacional Niños y Adultos</h3>
@@ -293,11 +282,9 @@
 
             <div class="col">
               <div class="product-item">
-                <figure>
-                  <a href="index.html" title="Product Title">
+                <figure>                
                     <img src="images/Tienda/ropa_deportiva_peñarol_SUPERKRAKEN.png" alt="Product Thumbnail"
-                      class="tab-image">
-                  </a>
+                      class="tab-image">               
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canguro Peñarol 1 Niños y Adultos</h3>
@@ -325,11 +312,9 @@
 
             <div class="col">
               <div class="product-item">
-                <figure>
-                  <a href="index.html" title="Product Title">
+                <figure>                
                     <img src="images/Tienda/ropa_deportiva_peñarol_SUPERKRAKEN (2).png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canguro Peñarol 2 Niños y Adultos</h3>
@@ -358,10 +343,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ropa_deportiva_peñarol_SUPERKRAKEN (3).png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canguro Peñarol - Mujer</h3>
@@ -390,10 +373,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ropa_deportiva_peñarol_SUPERKRAKEN (4).png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Pantalón Unisex Peñarol 1</h3>
@@ -422,10 +403,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ropa_deportiva_peñarol_SUPERKRAKEN (5).png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Pantalón Unisex Peñarol 2</h3>
@@ -465,12 +444,12 @@
       <div class="bg-secondary text-light py-5 my-5"
         style="background: url('images/superkraken_foto_gorro\ \(2\).png') no-repeat; background-size: cover; height: 300px">
 
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <div class="row">
             <div class="col-md-5 p-3 text-start">
               <div class="section-header">
                 <h2 class="section-title display-5 text-light text-start">
-                  Camisetas deportivas
+                  CAMISETAS DEPORTIVAS
                 </h2>
               </div>
               <p class="text-start">
@@ -490,8 +469,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-header d-flex flex-column my-4">
-            <h2 class="section-title text-primary-kraken" data-aos="fade-right" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">Equipos deportivos de Futbol - Consultar stock</h2>
+            <h2 class="section-title text-primary-kraken">EQUIPOS DEPORTIVOS DE FUTBOL - CONSULTAR STOCK</h2>
             <p>Niños (talles del 6 al 14)</p>
           </div>
         </div>
@@ -507,10 +485,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
-                    <img src="images/Tienda/Futbol_camiseta_ronaldo_Rochet_SUPERKRAKEN.png" alt="Product Thumbnail"
-                      class="tab-image">
-                  </a>
+                  <img src="images/Tienda/Futbol_camiseta_ronaldo_Rochet_SUPERKRAKEN.png" alt="Product Thumbnail"
+                    class="tab-image">
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta S. Rochet - Roja</h3>
@@ -540,10 +516,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_ronaldo_Rochet_SUPERKRAKEN (2).png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta S. Rochet - Verde</h3>
@@ -572,10 +546,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta__ronaldo_nacional_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta Nacional - Golero</h3>
@@ -604,10 +576,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_ronaldo_nacional_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta Nacional - Blanco</h3>
@@ -636,10 +606,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_peñarol_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta Peñarol dorada</h3>
@@ -668,10 +636,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_peñarol_SUPERKRAKEN (2).png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta Peñarol negra</h3>
@@ -700,10 +666,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_peñarol_SUPERKRAKEN (3).png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta Peñarol</h3>
@@ -744,8 +708,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-header d-flex flex-column my-4">
-            <h2 class="section-title text-primary-kraken" data-aos="fade-right" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">Equipos deportivos de Futbol - Consultar stock</h2>
+            <h2 class="section-title text-primary-kraken">EQUIPOS DEPORTIVOS DE FUTBOL - CONSULTAR STOCK</h2>
             <p>Niños (talles del 6 al 14)</p>
           </div>
         </div>
@@ -761,10 +724,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_Al-Nassr_F.C._SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Al-Nassr F. C.</h3>
@@ -794,10 +755,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_croacia_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Croacia</h3>
@@ -826,10 +785,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_inter_de_miami_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Inter de Miami</h3>
@@ -858,10 +815,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_brasil_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Brasil</h3>
@@ -890,10 +845,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_flamengo_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short -Flamengo</h3>
@@ -922,10 +875,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_santos_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Santos</h3>
@@ -954,10 +905,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_real_madrid_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Real Madrid</h3>
@@ -986,10 +935,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_barca_yamal_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Barça</h3>
@@ -1018,10 +965,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_real_madrid_SUPERKRAKEN (2).png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Real Madrid</h3>
@@ -1050,10 +995,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_boca_juniors_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Boca Juniors</h3>
@@ -1082,10 +1025,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_barcelona_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Barcelona</h3>
@@ -1114,10 +1055,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_river_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - River</h3>
@@ -1146,10 +1085,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_inter_de_miami_SUPERKRAKEN (2).png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Inter de Miami</h3>
@@ -1178,10 +1115,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_y_short_ronaldo_japon_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Japón</h3>
@@ -1210,10 +1145,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_ronaldo_santos_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Santos</h3>
@@ -1242,10 +1175,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_ronaldo_real_madrid_SUPERKRAKENk.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Real Madrid</h3>
@@ -1274,10 +1205,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Futbol_camiseta_ronaldo_milan_SUPERKRAKENk.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Camiseta y short - Milan</h3>
@@ -1318,8 +1247,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-header d-flex flex-column my-4">
-            <h2 class="section-title text-primary-kraken" data-aos="fade-right" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">Básquet - Consultar stock</h2>
+            <h2 class="section-title text-primary-kraken">BASQUET - CONSULTAR STOCK</h2>
             <p>Niños (talles 10, 12, 14 y 16) y Adultos (P, M, G y GG)</p>
           </div>
         </div>
@@ -1335,10 +1263,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/BASQUET_musculosa_lakers_n6_amarilla_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Musculosa Lakers - Amarilla </h3>
@@ -1368,10 +1294,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/BASQUET_musculosa_lakers_n6_violeta_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Musculosa Lakers - Violeta</h3>
@@ -1400,10 +1324,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/BASQUET_musculosa_bulls_n23_roja_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Musculosa Bulls - Roja
@@ -1433,10 +1355,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/BASQUET_musculosa_warriors_n30_azul_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Musculosa Warriors - Azul</h3>
@@ -1476,12 +1396,12 @@
       <div class="bg-secondary text-light py-5 my-5"
         style="background: url('images/superkraken_foto_gorro\ \(1\).png') no-repeat; background-size: cover;">
 
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <div class="row">
             <div class="col-md-5 p-3 text-start">
               <div class="section-header">
                 <h2 class="section-title display-5 text-light text-start">
-                  Accesorios
+                  ACCESORIOS
                 </h2>
               </div>
               <p class="text-start">
@@ -1503,8 +1423,7 @@
 
           <div class="section-header d-flex flex-wrap justify-content-between my-4">
 
-            <h2 class="section-title text-primary-kraken" data-aos="fade-right" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">Gorros</h2>
+            <h2 class="section-title text-primary-kraken">GORROS</h2>
 
           </div>
 
@@ -1520,10 +1439,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_gorros_$490_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Gorros</h3>
@@ -1553,10 +1470,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_gorros_$490_1_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Gorro - Negro Mancester City</h3>
@@ -1585,10 +1500,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_gorros_$490_2_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Gorro - Manchester City</h3>
@@ -1617,10 +1530,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_gorros_$490_4_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Gorro - Bayern Munchen</h3>
@@ -1649,10 +1560,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_gorros_$490_3_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Gorros- Equipos varios </h3>
@@ -1695,8 +1604,7 @@
 
           <div class="section-header d-flex flex-wrap justify-content-between my-4">
 
-            <h2 class="section-title text-primary-kraken" data-aos="fade-right" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">Accesorios</h2>
+            <h2 class="section-title text-primary-kraken">ACCESORIOS</h2>
 
           </div>
 
@@ -1712,11 +1620,9 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img
                       src="images/Tienda/ACCESORIOS_canilleras_niños_y_adultos_premium_$320_1_SUPERKRAKEN_amarillas.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canilleras niños y adultos premium - Amarilla</h3>
@@ -1746,10 +1652,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_canilleras_niños_y_adultos_premium_$320_6_SUPERKRAKEN_rojo.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canilleras niños y adultos premium - Roja</h3>
@@ -1778,11 +1682,9 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img
                       src="images/Tienda/ACCESORIOS_canilleras_niños_y_adultos_premium_$320_2_SUPERKRAKEN_naranja.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canilleras niños y adultos premium - Naranja</h3>
@@ -1811,10 +1713,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_canilleras_niños_y_adultos_premium_$320_3_SUPERKRAKEN_azul.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canilleras niños y adultos premium - Azul</h3>
@@ -1843,10 +1743,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_canilleras_niños_y_adultos_premium_$320_4_SUPERKRAKEN_fluor.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canilleras niños y adultos premium - Flúor</h3>
@@ -1875,10 +1773,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_canilleras_niños_y_adultos_premium_$320_5_SUPERKRAKEN_gris.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Canilleras niños y adultos premium - Gris</h3>
@@ -1907,10 +1803,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_medias_SUPERKRAKEN_verde.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Medias de fútbol - Verde</h3>
@@ -1939,10 +1833,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_medias_SUPERKRAKEN_azul.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Medias de fútbol - Azul</h3>
@@ -1971,10 +1863,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_medias_SUPERKRAKEN_naranja.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Medias de fútbol - Naranja</h3>
@@ -2003,10 +1893,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Manga_de_comprensión_brazos_mano _SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Manga de comprensión para brazos y mano - Blanca negra gris y beige</h3>
@@ -2035,10 +1923,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Guantes_de_Golero_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Guantes de Golero</h3>
@@ -2067,10 +1953,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Pelotas_de_futbol_número_5_champions_superkraken.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Pelota de fútboln Nº 5 Champions</h3>
@@ -2099,10 +1983,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Reloj_led_de_silicona_Futbol_camiseta_y_short_ronaldo_$790_SUPERKRAKEN.png"
                       alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Reloj led de silicona niños y adultos</h3>
@@ -2131,10 +2013,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_llavero_$100_SUPERKRAKEN_nacional.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Llavero de Nacional</h3>
@@ -2163,10 +2043,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_llavero_$100_SUPERKRAKEN_peñarol.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Llavero de Peñarol</h3>
@@ -2209,8 +2087,7 @@
 
           <div class="section-header d-flex flex-wrap justify-content-between my-4">
 
-            <h2 class="section-title text-primary-kraken" data-aos="fade-right" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">Riñoneras y lentes
+            <h2 class="section-title text-primary-kraken">RIÑONERAS Y LENTES
             </h2>
           </div>
 
@@ -2226,10 +2103,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_riñonera_$290_SUPERKRAKEN_gris.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Riñonera - Gris</h3>
@@ -2259,10 +2134,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_riñonera_$290_SUPERKRAKEN_negro.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Riñonera - Negro</h3>
@@ -2291,10 +2164,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_riñonera_$290_SUPERKRAKEN_azul.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Riñonera - Azul</h3>
@@ -2323,10 +2194,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_gafas_de_sol_$490_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Lentes - Azules</h3>
@@ -2356,10 +2225,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/ACCESORIOS_gafas_de_sol_$490_1_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Lentes - Negros</h3>
@@ -2402,8 +2269,7 @@
 
           <div class="section-header d-flex flex-wrap justify-content-between my-4">
 
-            <h2 class="section-title text-primary-kraken" data-aos="fade-right" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">Accesorios - Varios
+            <h2 class="section-title text-primary-kraken">JUEGOS DE MESA Y OTROS
             </h2>
           </div>
 
@@ -2419,9 +2285,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/juego_de_mesa_SUPERKRAKEN.png" alt="Product Thumbnail" class="tab-image">
-                  </a>
+
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Juego bolas imantadas</h3>
@@ -2449,10 +2314,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/juego_de_mesa_SUPERKRAKEN (2).png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Juego de equilibrio astronautas</h3>
@@ -2481,10 +2344,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Lentes_de_natación_niñas_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Lentes de natación niños/as</h3>
@@ -2513,10 +2374,8 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Lentes_de_natación_niños_SUPERKRAKEN.png" alt="Product Thumbnail"
                       class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Lentes de natación niños/as</h3>
@@ -2545,9 +2404,7 @@
             <div class="col">
               <div class="product-item">
                 <figure>
-                  <a href="index.html" title="Product Title">
                     <img src="images/Tienda/Mochila_Stich_SUPERKRAKEN.png" alt="Product Thumbnail" class="tab-image">
-                  </a>
                 </figure>
                 <div class="d-flex flex-column text-center">
                   <h3 class="fs-6 fw-normal">Mochila Stich</h3>
@@ -2586,22 +2443,31 @@
     <div class="container-lg">
 
       <div class="pt-5 rounded-5" style="background-color: #234b80; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);">
-        <div class="container">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-4 text-light">
-              <h2 class="mt-5 compralo-texto">Comprá ahora online con 10% OFF</h2>
-              <p>Comprá lo último en ropa deportiva de buena calidad.</p>
-              <div class="d-flex gap-2 flex-wrap mb-5">
-                <p href="#" title="App store"><img src="images/boton_mercado_pago_con_enlace.png" alt="app-store"></p>
-                <a href="#" title="Google Play"><img src="images/boton_instagram_con_enlace.png" alt="google-play"></a>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <img src="images/imagen_medios_de_pagos.png" alt="phone" class="img-fluid">
-            </div>
-          </div>
+  <div class="container">
+    <div class="row justify-content-center align-items-center" data-aos="zoom-in">
+      <div class="col-md-4 text-light">
+        <h2 class="mt-5 compralo-texto">Comprá ahora online con 10% OFF</h2>
+        <p>Comprá lo último en ropa deportiva de buena calidad.</p>
+        <div class="d-flex gap-3 align-items-center flex-wrap mb-5">
+          <a href="#" title="Mercado Pago">
+            <img src="images/boton_mercado_pago_con_enlace.png" alt="Mercado Pago" style="height: 50px;">
+          </a>
+          <a href="https://www.instagram.com/superkraken2021/" 
+             class="d-flex align-items-center justify-content-center" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             title="Instagram">
+            <img src="images/boton_instagram_con_enlace.png" alt="Instagram" style="height: 50px;">
+          </a>
         </div>
       </div>
+      <div class="col-md-5">
+        <img src="images/imagen_medios_de_pagos.png" alt="phone" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
 
   </section>
 
@@ -2615,13 +2481,17 @@
             <div class="social-links mt-3">
               <ul class="d-flex list-unstyled gap-2">
                 <li class="text-center">
-                  <a href="#" class="btn btn-outline-light d-flex align-items-center justify-content-center">
+                  <a href="https://www.facebook.com/superkrakenregresa/"
+                    class="btn btn-outline-dark d-flex align-items-center justify-content-center" target="_blank"
+                    rel="noopener noreferrer">
                     <i class="bi bi-facebook"></i>
                   </a>
                 </li>
 
                 <li class="text-center">
-                  <a href="#" class="btn btn-outline-light d-flex align-items-center justify-content-center">
+                  <a href="https://www.instagram.com/superkraken2021/"
+                    class="btn btn-outline-dark d-flex align-items-center justify-content-center" target="_blank"
+                    rel="noopener noreferrer">
                     <i class="bi bi-instagram"></i>
                   </a>
                 </li>
@@ -2632,7 +2502,7 @@
 
         <div class="col-md-2 col-sm-6">
           <div class="footer-menu">
-            <h5 class="widget-title">Menú</h5>
+            <h5 class="widget-title">MENU</h5>
             <ul class="menu-list list-unstyled">
               <li class="menu-item">
                 <a href="#" class="nav-link">Inicio</a>
@@ -2645,7 +2515,7 @@
         </div>
         <div class="col-md-2 col-sm-6">
           <div class="footer-menu">
-            <h5 class="widget-title">Tienda</h5>
+            <h5 class="widget-title">TIENDA</h5>
             <ul class="menu-list list-unstyled">
               <li class="menu-item">
                 <a href="tienda.html#deportivos" class="nav-link">Deportivos</a>
@@ -2661,7 +2531,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 ms-md-auto">
           <div class="footer-menu">
-            <h5 class="widget-title">Contactanos</h5>
+            <h5 class="widget-title">CONTACTANOS</h5>
             <ul class="menu-list list-unstyled">
               <li class="menu-item">
                 <a href="tel:+59891419320" class="nav-link"><strong>Teléfono:</strong> 091419320</a>
@@ -2675,7 +2545,7 @@
 
           <!-- Medios de pago debajo -->
           <div class="footer-menu mt-4">
-            <h5 class="widget-title">Medios de pago</h5>
+            <h5 class="widget-title">MEDIOS DE PAGO</h5>
             <div class="payment-logos">
               <img src="images/medios_de_pago_superkraken.png" alt="Medios de pago" class="img-fluid">
             </div>
@@ -2693,7 +2563,7 @@
           <p>© 2025 Superkraken. Todos los derechos reservados.</p>
         </div>
         <div class="col-md-6 credit-link text-start text-md-end">
-          <p> Diseñado por <a href="https://modernawebs.com/">mOderna</a> </p>
+          <p> Diseñado por <a href="https://modernawebs.com/" target="_blank" rel="noopener noreferrer">mOderna</a> </p>
         </div>
       </div>
     </div>
@@ -2708,7 +2578,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-  </script>.
+  </script>
 </body>
 
 </html>
